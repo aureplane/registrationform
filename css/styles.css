@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #192128;
+}
+
+.formwrap {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+
+/*    HEADER ------------------------- */
+header {
+	background-color: #ceafaf;
+	height: 100px;
+	color: white;
+	text-align: center;
+	display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+
+/*    Div Info Form ------------------------- */
+
+.info_form {
+	text-align: center;
+	border-bottom: 4px solid #2d3945;
+	padding: 15px;
+	margin-bottom: 2px;
+}
+
+
+/*    FORM ------------------------- */
+
+form {
+	width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	background-color: #f2eded;
+	border: none;
+	width:100%;
+	padding: 15px;
+	border-radius: 5px;
+	display: block;
+	color: white;
+	transition: background-color 1s ease-out;
+}
+
+textarea {
+	height: 110px;
+	margin-bottom: 12px;
+	background-color: #eaebed;
+	color: grey;
+}
+
+select {
+	color: #605d5d;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 0 5px 8px 0;
+}
+
+input:focus,
+select:focus {
+	background-color: #515050;
+	border: 1px solid #d18c8c;
+	outline: none;
+	transition: background-color 1s ease-in;
+}
+
+textarea:focus {
+	border: 1px solid #d18c8c;
+	outline: none;
+}
+
+.contact_form,
+.newsletter_form {
+	border-top: 2px solid #2d3945;
+	margin-bottom: 25px;
+}
+
+.newsletter_form {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+fieldset {
+  margin: 20px 0 10px;
+  padding: 0;
+  border: none;
+}
+
+legend {
+	color: #2D3945;
+	font-weight: 800;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	border: none;
+}
+
+label {
+  margin-bottom: 7px;
+}
+
+input::placeholder {
+	font-size: 0.8em;
+	text-align: right;
+	font-style: italic;
+	padding-right:5px;
+}
+
+select {
+ -webkit-appearance: none;
+}
+
+label.light {
+	display: inline;
+}
+
+label[class="otherlabel"] {
+	display: block;
+}
+
+input[id="zipcode"] {
+	width: 25%;
+}
+
+.newsletter_choice,
+.newsletter_format {
+	margin-bottom: 20px;
+}
+
+.form_part {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+button {
+	display: block;
+	margin: auto;
+	background-color: #ceafaf;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	font-weight: bold;
+	color: white;
+	border: none;
+	padding: 0;
+}
+
+
+/*    FOOTER ------------------------- */
+footer {
+	margin: 20px 0 100px 0;
+	text-align: center;
+	font-style: italic;
+}
+
+/*    MEDIA QUERIES ------------------------- */
+
+@media (min-width: 768px) {
+
+	form {
+		width: 88%;
+		margin: 0 auto;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 70%;
+	}
+
+	input[id="zipcode"] {
+	width: 25%;
+	margin-right: 45%;
+}
+
+	.form_part {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+.formwrap {
+	max-width: 800px;
+	}
+
+}
